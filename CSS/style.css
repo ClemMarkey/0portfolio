@@ -245,6 +245,7 @@ footer {
     background-color: #db3a34;
     color: white;
     padding-bottom: 2em;
+    z-index: 3;
 }
 footer p {
     width: 50vw;
@@ -265,5 +266,5 @@ footer img {
 
 #nav_bottom a {
     display: block;
-    width: 8vw;
+    width: 4.5vw;
 }
