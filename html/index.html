@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <div class="red cont">
-        <nav>
+
+    <section class="top cont" id="top">
+        <nav id="nav_top">
             <ul>
                 <li><a href="#about">À Propos</a></li>
                 <li><b>|</b></li>
@@ -22,7 +23,7 @@
             </ul>
         </nav>
 
-        <img id="photo" src="../images/téléchargement.png" alt="Photo de moi">
+        <img id="photo" src="../images/photo.png" alt="Photo de moi">
 
         <h1>Clément Markey - Développeur Web</h1>
 
@@ -30,9 +31,9 @@
             Qui a dit qu'un littéraire ne pouvait pas être dev ?
         </blockquote>
 
-    </div>
+    </section>
 
-    <div class="blue cont" id="about">
+    <section class="blue cont" id="about">
 
         <h2>À Propos</h2>
 
@@ -43,8 +44,8 @@
             Titulaire d'un bac L, j’ai pris plusieurs années à me chercher. Entre études de langues, communication et
             gestion administrative et commerciale, j’ai créé avec mes amis une association de réalisations
             audiovisuelles dans le but d’organiser un <strong>festival de courts-métrages sur Hazebrouck.</strong> Ce festival eût 5
-            éditions entre 2013 et 2017 et fût un grand succès personnel, nous donnant ainsi <em>diverses clés et
-            compétences</em> dans différents domaines, notamment dans l’événementiel et le management.
+            éditions entre 2013 et 2017 et fût un grand succès personnel, nous donnant ainsi <strong>diverses clés et
+            compétences</strong> dans différents domaines, notamment dans l’événementiel et le management.
             <br>
             Autonome, polyvalent et flexible, je suis également <strong>très à l’aise en Anglais</strong>. Cette capacité se révèle un
             véritable atout au sein de l'entreprise ou de n'importe quelle équipe.
@@ -54,7 +55,7 @@
             de <strong>l'école 42</strong> en 2015 et <strong>l'école O'clock</strong> fin 2018. Grâce à cela, j'ai pu gagner en expérience et en
             compétences.
             <br>
-            Enfin convaincu d’avoir trouvé ma voie et ayant entendu parler de Simplon Calais, j’ai décidé de m’y
+            Enfin convaincu d’avoir trouvé ma voie et ayant entendu parler de <strong>Simplon Calais</strong>, j’ai décidé de m’y
             inscrire pour poursuivre mon rêve, et j'y suis avant tout pour améliorer mes connaissances techniques et
             professionnelles au service de vos projets futurs.
         </p>
@@ -66,22 +67,31 @@
         <h3>Compétences et intérêts</h3>
 
         <div class="logos">
-            <img src="../images/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="">
-            <img class="js" src="../images/600px-JavaScript-logo.png" alt="">
-            <img src="../images/1280px-PHP-logo.svg.png" alt="">
-            <img src="../images/1024px-Ruby_logo.svg.png" alt="">
-            <img src="../images/1024px-Python-logo-notext.svg.png" alt="">
+            <img src="../images/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="html/css">
+            <img src="../images/600px-JavaScript-logo.png" alt="javascript">
+            <img src="../images/1280px-PHP-logo.svg.png" alt="php">
+            <img src="../images/1024px-Ruby_logo.svg.png" alt="ruby">
+            <img src="../images/1024px-Python-logo-notext.svg.png" alt="python">
         </div>
 
-    </div>
+    </section>
 
 
-    <div class="yellow cont" id="portfolio">
+    <section class="yellow cont" id="portfolio">
+        <div class="arrow"><a href="#top">^</a></div>
         <h2>Portfolio / Projets</h2>
 
-    </div>
+        <ul>
+        <li><a href="../site_horlogerie/index.html" target="_blank"><img class="exp" id="horl" src="../images/horlogerie.png" alt=""></a></li>
 
-    <div class="grey cont" id="contact">
+        <li><a href="../hotcold_js/index.html" target="_blank"><img class="exp" src="../images/hotCold.png" alt=""></a></li>
+
+        <li><a href="../PountaClick_JS/index.html" target="_blank"><img class="exp" src="../images/puntaClick.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <section class="grey cont" id="contact">
+        <div class="arrow"><a href="#top">^</a></div>
         <h2>Contact</h2>
         <p>
             Pour toute demande de votre part, veuillez me contacter via le formulaire ci-dessous:
@@ -92,21 +102,32 @@
             <div class="formu">
                 <input type="email" name="Email" id="email" placeholder="Adresse E-mail" required>
                 <input type="text" name="Name" id="name" placeholder="Votre Nom" required>
-                <input type="button" value="Envoyer" id="submit">
+                <input type="submit" value="Envoyer" id="submit">
             </div>
         </form>
 
 
-    </div>
+    </section>
 
-    <footer class="red cont">
-        <span>Clément Markey - 2019</span>
+    <footer class="red">
+
+            <nav id="nav_bottom">
+                    <ul>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><b>|</b></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><b>|</b></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+        <p>Clément Markey - 2019</p>
         <br>
-        <a href="https://www.linkedin.com/in/clement.markey/"><img src="../images/lk.png" alt="Logo vers mon profil GitHub"></a>
-        <a href="https://www.linkedin.com/in/clement.markey/"><img src="../images/gh.png" alt="Logo vers mon profil LinkedIn"></a>
+        <a href="https://www.linkedin.com/in/clement.markey/" target="_blank"><img src="../images/lk.png" alt="Logo vers mon profil GitHub"></a>
+        <a href="https://www.linkedin.com/in/clement.markey/" target="_blank"><img src="../images/gh.png" alt="Logo vers mon profil LinkedIn"></a>
     </footer>
-
-
+<script src="../js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 
 </html>
