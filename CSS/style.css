@@ -15,12 +15,23 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: 'Lato', sans-serif;
+}
+
+.para {
+    z-index: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 120vw;
+    height: 120vh;
+    left: -10vw;
+    top: -10vh;
 }
 
 hr {
@@ -105,10 +116,6 @@ strong {
 
 /* Image en-tête */
 
-.head_image {
-    height: 20vh;
-}
-
 /* Nav à droite pour l'écran large */
 
 #nav_top {
@@ -132,12 +139,12 @@ li {
 
 .top {
     /* background-color: #db3a34; */
-    background-image: url(../images/programming-1873854_1920.png);
-    background-attachment: fixed;
-    background-position: center;
     background-size: cover;
     padding-top: 0;
+    z-index: 1;
+    position: relative;
 }
+
 
 #photo {
     width: 15vw;
@@ -149,6 +156,7 @@ li {
 
 .blue {
     background-color: #084c61;
+    z-index: 1;
 }
 
 .blue p {
@@ -168,6 +176,7 @@ li {
 .yellow {
     background-color: #ffc857;
     color: #323031;
+    z-index: 3;
 }
 
 .yellow h2 {
@@ -198,6 +207,7 @@ li {
 
 .grey {
     background-color: #323031;
+    z-index: 3;
 }
 
 form {
