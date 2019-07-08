@@ -1,7 +1,6 @@
 document.addEventListener("mousemove", parallax);
 
-function parallax(e)
-{
+function parallax(e) {
     this.querySelectorAll(".layer").forEach(layer => {
         var speed = layer.getAttribute("data-speed");
         var x = ((window.innerWidth - e.pageX * speed) / 100) ;
